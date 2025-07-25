@@ -1,0 +1,130 @@
+<!-- pages/category.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Categories - MyShop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- ✅ Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">MyShop</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="category.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ✅ Categories Section -->
+    <div class="container py-5">
+      <h2 class="text-center mb-4">Browse Categories</h2>
+      <div class="row">
+        <!-- Category 1: Electronics -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="../images/electronics.jpeg"
+              class="card-img-top"
+              alt="Electronics"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Electronics</h5>
+              <p class="card-text">
+                Find the best gadgets, accessories, and smart devices to make
+                your life easier.
+              </p>
+              <a href="products.html" class="btn btn-outline-primary"
+                >View Products</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Fashion -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="../images/fashion.jpg"
+              class="card-img-top"
+              alt="Fashion"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fashion</h5>
+              <p class="card-text">
+                Explore the latest clothing, footwear, and accessories for all
+                genders and styles.
+              </p>
+              <a href="products.html" class="btn btn-outline-primary"
+                >View Products</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Books -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="../images/books.jpeg" class="card-img-top" alt="Books" />
+            <div class="card-body">
+              <h5 class="card-title">Books</h5>
+              <p class="card-text">
+                Dive into stories, learn new skills, and grow your knowledge
+                with our top reads.
+              </p>
+              <a href="products.html" class="btn btn-outline-primary"
+                >View Products</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">&copy; 2025 MyShop. All rights reserved.</p>
+    </footer>
+
+    <!-- ✅ Scroll to Top -->
+    <button id="scrollToTop" class="btn btn-secondary">↑</button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/scrollToTop.js"></script>
+  </body>
+</html>

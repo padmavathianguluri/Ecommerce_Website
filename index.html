@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MyShop - Home</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ✅ Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">MyShop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/category.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ✅ Slider -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/banner1.jpeg" class="d-block w-100" alt="Banner" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner2.jpg" class="d-block w-100" alt="Banner" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- ✅ Shop by Category -->
+    <section class="py-5 text-center">
+      <div class="container">
+        <h2>Shop by Category</h2>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/electronics.jpeg"
+                class="card-img-top"
+                alt="Electronics"
+              />
+              <div class="card-body"><p class="card-text">Electronics</p></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/fashion.jpg"
+                class="card-img-top"
+                alt="Fashion"
+              />
+              <div class="card-body"><p class="card-text">Fashion</p></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="images/books.jpeg" class="card-img-top" alt="Books" />
+              <div class="card-body"><p class="card-text">Books</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Latest Products -->
+    <section class="py-5 bg-light text-center">
+      <div class="container">
+        <h2>Latest Products</h2>
+        <div class="row mt-4">
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="images/smartwatch.jpeg"
+                class="card-img-top"
+                alt="Smart Watch"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Smart Watch</h5>
+                <p class="card-text">$59.99</p>
+                <button
+                  class="btn btn-primary"
+                  onclick='addToCart("Smart Watch", 59.99, "images/smartwatch.jpeg")'
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="images/headphones.jpg"
+                class="card-img-top"
+                alt="Headphones"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Headphones</h5>
+                <p class="card-text">$39.99</p>
+                <button
+                  class="btn btn-primary"
+                  onclick='addToCart("Headphones", 39.99, "images/headphones.jpg")'
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Add more product cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Features -->
+    <section class="py-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"><h5>🚚 Free Shipping</h5></div>
+          <div class="col-md-4"><h5>💳 Secure Payment</h5></div>
+          <div class="col-md-4"><h5>🔁 Easy Returns</h5></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">&copy; 2025 MyShop. All rights reserved.</p>
+    </footer>
+
+    <!-- ✅ Scroll to Top -->
+    <button id="scrollToTop" class="btn btn-secondary">↑</button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scrollToTop.js"></script>
+
+    <!-- ✅ Add to Cart Script -->
+    <script>
+      function addToCart(title, price, image) {
+        const product = { title, price, image, quantity: 1 };
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        const index = cart.findIndex((p) => p.title === title);
+        if (index !== -1) {
+          cart[index].quantity += 1;
+        } else {
+          cart.push(product);
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("Added to cart!");
+      }
+    </script>
+  </body>
+</html>
